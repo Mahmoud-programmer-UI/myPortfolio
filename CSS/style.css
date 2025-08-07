@@ -1,0 +1,206 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+body{
+    background-color: rgb(254, 245, 255);
+}
+header{
+    background-color: rgb(254, 245, 255);
+    height: 80px !important;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+header .code-symbol{
+    color: rgb(254, 245, 255);
+    background-color: rgb(19, 18, 23);    
+    width: 8%;
+    height: 3.2rem;
+}
+header button{
+    height: 25px;
+    width: 50px !important;
+}
+header button span{
+    background-color:  rgb(193, 155, 236);
+    height: 100%;
+    width: 50%;
+    left: 0%;
+    transition: all 0.7s ease-in-out;
+}
+header button:hover{
+    transform: translate(-5px) scale(1.2);
+}
+.my-photo{   
+    width: 350px;
+    height: 350px;
+    object-fit: cover; 
+    border-radius:100% ;
+    animation: photoattend 2.5s ease-in-out 1 ;
+}
+.profile-content{
+    animation: contentAttend 3s ease-in-out 1 ;
+}
+.profile-section-contact p{
+    border: 1px solid black;
+}
+.about{
+    width: 30%;
+    height: fit-content;
+    margin-left: 6% !important;
+    background-color: rgb(246, 240, 249) !important;
+}
+.about img{
+    width: 24px;
+    height: 24px;
+}
+.more{
+    width: 55%;
+    margin-left: 3% !important;
+    margin-right: 6% !important;
+}
+.more-headers p{
+    width: 33.33333% !important;
+}
+.more-headers p:hover{
+    background-color: rgba(69, 69, 70, 0.137);
+}
+.projects-content{
+    display: grid;
+    grid-template-columns: auto auto;    
+    gap: 30px;
+}
+.project-card {
+    text-decoration: none;
+    border: none !important;
+    background-color: rgb(246, 240, 249) ;
+}
+.project-card:hover{
+    transition:all 0.3s ease-in-out;
+    filter: brightness(90%);
+}
+.resume-content span{
+    color: rgb(209, 189, 255);
+}
+.resume-content .skills{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.resume-content .skills div{
+    background-color: rgb(246, 240, 249) ;
+    display: flex;
+    align-items: center;
+    padding: 2% 0 !important;
+    width: calc(25% - 15px);
+}
+.resume-content .skills div p{
+    margin: 8px;
+}
+form{
+    background-color: rgb(246, 240, 249) !important;
+    height: fit-content;
+    position: relative;
+}
+form input{
+    border:1px solid white !important;
+    outline: none;
+}
+::placeholder{
+    font-weight: bold;
+    color:rgb(176, 171, 179) !important ;
+}
+form input:not(:nth-child(3)){
+    padding: 10px !important;
+    display: flex;
+    align-items: flex-start;
+}
+form input:nth-child(3){
+    padding: 10px 10px 80px 10px !important;
+}
+form input:nth-child(4){
+    background-color:  rgb(103, 81, 164) ;
+    color: white;
+    position: relative;
+}
+form input:nth-child(4):hover{
+    filter:brightness(90%);
+}
+.dark-mode-button{
+    background-color: rgb(209, 189, 255) !important;
+}
+.contact-info img{
+    width: 25px;
+}
+.contact-info .social-info a img{
+    width: 35px;
+}
+.contact-info .social-info a{
+    width: 50px;
+    height: 50px;
+}
+.contact-info .social-info a:hover{
+    background-color: rgba(88, 87, 87, 0.274);
+}
+hr:last-of-type{
+
+    width: 95%;
+    margin-left: 2.5% !important;
+}
+/* js classes added */
+.hide{
+    display: none;
+}
+.appearance{
+    display: block !important;
+}
+.hide{
+    display: none !important;
+}
+.active{
+    border-bottom: 2px solid rgb(103, 81, 164) !important;
+}
+/* 
+toggle part
+*/
+.code-symbol-dark{
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+}
+.dark-mode{
+    background-color: rgb(19, 18, 23) !important;
+    color: white !important;
+} 
+.switch-off{
+    left: 52% ;
+}
+/* 
+animations
+1-my-photo
+*/
+@keyframes photoattend {
+    0%{
+        transform: translate(-50%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+@keyframes contentAttend {
+    0%{
+        transform: translate(50%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+/* display screen sizes */
+@media (max-width:767px) {
+    .projects-content{
+        grid-template-columns: auto ;    
+        gap: 10px;
+    }
+}
