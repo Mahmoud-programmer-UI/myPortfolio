@@ -128,15 +128,11 @@ if (mainHeaders ) {
     let projectsSection=parentSections.querySelector(".projects-section")
     let resumeSection=parentSections.querySelector(".resume-section")
     let contactSection=parentSections.querySelector(".contact-information")
-    console.log(projectsSection)
-    console.log(resumeSection)
-    console.log(contactSection)
     // access its childern
     let pFirst = mainHeaders.getElementsByTagName("p")[0];
     let pSecond = mainHeaders.getElementsByTagName("p")[1];
     let pThird = mainHeaders.getElementsByTagName("p")[2];
 
-    console.log(pFirst)
     pFirst.onclick= ()=>{
         pFirst.classList.add("active")
         pSecond.classList.remove("active")
@@ -176,9 +172,7 @@ function checkInputs(){
         let messageInput=form.getElementsByTagName("input")[2];
         inputs.forEach((input)=>{
             // check if every input not empty
-            console.log(input)
             input.oninput=()=>{
-                console.log(input)
                 if(nameInput.value !== "" && emailInput.value !== "" && messageInput.value !== "" ){
                     submit.style.color="white"
                     submit.value="send"
@@ -186,7 +180,6 @@ function checkInputs(){
                 }else{
                     submit.style.color="#ddd"
                     submit.value="Waiting Message..."
-                    
                     submit.disabled = true;
                 }
             }
