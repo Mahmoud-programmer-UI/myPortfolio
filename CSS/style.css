@@ -108,6 +108,7 @@ form{
 form input{
     border:1px solid white !important;
     outline: none;
+    color:rgb(176, 171, 179) !important ;
 }
 ::placeholder{
     font-weight: bold;
