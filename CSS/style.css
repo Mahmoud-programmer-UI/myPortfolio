@@ -200,6 +200,9 @@ animations
 }
 /* display screen sizes */
 @media (max-width:767px) {
+    .portofolio-container{
+        display: none;
+    }
     .projects-content{
         grid-template-columns: auto ;    
         gap: 10px;
