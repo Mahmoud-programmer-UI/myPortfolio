@@ -200,11 +200,39 @@ animations
 }
 /* display screen sizes */
 @media (max-width:767px) {
+    header .code-symbol{
+        width: 55%;
+    }
     .all-information{
         flex-direction: column;
     }
-    .portofolio-container{
-        display: none;
+    .about{
+        width: 100%;
+        margin-left: 1.5% !important;
+    }
+    .more{
+        margin-top: 20px !important;
+        width: 100%;
+    }
+    .profile-section{
+        flex-direction: column;
+    }
+    .profile-content{
+        flex-direction: column;
+        margin-top: 15px !important;
+    }
+    .profile-content .profile-information{
+        text-align: center;
+        align-items: center;
+        margin-top: 35px;
+    }
+    .profile-section-contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-section-contact p{
+        width: fit-content;
+        margin: 10px 0 !important;
     }
     .projects-content{
         grid-template-columns: auto ;    
