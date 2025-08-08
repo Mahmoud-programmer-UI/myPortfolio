@@ -165,3 +165,32 @@ if (mainHeaders ) {
         projectsSection.classList.add("hide")
     }
 }
+function checkInputs(){
+    let form=document.querySelectorAll("form")
+    
+    form.forEach((form)=>{
+        let inputs=form.querySelectorAll("input:not(:last-child)")
+        let submit=form.getElementsByTagName("input")[3];
+        let nameInput=form.getElementsByTagName("input")[0];
+        let emailInput=form.getElementsByTagName("input")[1];
+        let messageInput=form.getElementsByTagName("input")[2];
+        inputs.forEach((input)=>{
+            // check if every input not empty
+            console.log(input)
+            input.oninput=()=>{
+                console.log(input)
+                if(nameInput.value !== "" && emailInput.value !== "" && messageInput.value !== "" ){
+                    submit.style.color="white"
+                    submit.value="send"
+                    submit.disabled = false;
+                }else{
+                    submit.style.color="#ddd"
+                    submit.value="Waiting Message..."
+                    
+                    submit.disabled = true;
+                }
+            }
+        })
+    })
+}
+checkInputs()
