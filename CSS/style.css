@@ -237,4 +237,7 @@ animations
         grid-template-columns: auto ;    
         gap: 10px;
     }
+    .skills{
+        flex-direction: column;
+    }
 }
