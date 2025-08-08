@@ -200,6 +200,9 @@ animations
 }
 /* display screen sizes */
 @media (max-width:767px) {
+    .all-information{
+        flex-direction: column;
+    }
     .portofolio-container{
         display: none;
     }
