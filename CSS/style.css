@@ -220,6 +220,10 @@ animations
         flex-direction: column;
         margin-top: 15px !important;
     }
+    .my-photo{
+        width: 250px;
+        height: 250px;
+    }
     .profile-content .profile-information{
         text-align: center;
         align-items: center;
@@ -242,5 +246,8 @@ animations
     }
     .skills div{
         width: 35% !important;
+    }
+    .contact-section{
+        flex-direction: column;
     }
 }
